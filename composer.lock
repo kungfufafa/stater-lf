@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a6d8cd7be560ba49ec7a7b94e187df2",
+    "content-hash": "88b9d482627267e565e4940702e2a987",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -988,6 +988,65 @@
                 }
             ],
             "time": "2025-03-06T22:45:56+00:00"
+        },
+        {
+            "name": "filafly/filament-icons",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filafly/filament-icons.git",
+                "reference": "c1ced1bc0d0a03cd276ca2c3abf3abe2ca20b97d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filafly/filament-icons/zipball/c1ced1bc0d0a03cd276ca2c3abf3abe2ca20b97d",
+                "reference": "c1ced1bc0d0a03cd276ca2c3abf3abe2ca20b97d",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0 || ^5.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.20",
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Filafly\\Icons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nolan Nordlund",
+                    "email": "nolan@filafly.com",
+                    "homepage": "https://www.filafly.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Core package for managing Filament icon drivers via a common interface.",
+            "homepage": "https://filafly.com/plugins/filament-icons",
+            "keywords": [
+                "Phosphor",
+                "carbon",
+                "filament",
+                "font awesome",
+                "iconoir",
+                "icons",
+                "laravel",
+                "replace",
+                "swap"
+            ],
+            "support": {
+                "issues": "https://github.com/filafly/filament-icons/issues",
+                "source": "https://github.com/filafly/filament-icons/tree/v2.2.1"
+            },
+            "time": "2026-04-06T18:46:37+00:00"
         },
         {
             "name": "filament/actions",
@@ -3311,6 +3370,128 @@
                 }
             ],
             "time": "2026-06-27T03:14:20+00:00"
+        },
+        {
+            "name": "mckenziearts/blade-untitledui-icons",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mckenziearts/blade-untitledui-icons.git",
+                "reference": "a3cb8822a7dd95d9ae7d4a75dd4893ea67c32c90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mckenziearts/blade-untitledui-icons/zipball/a3cb8822a7dd95d9ae7d4a75dd4893ea67c32c90",
+                "reference": "a3cb8822a7dd95d9ae7d4a75dd4893ea67c32c90",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.9",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                "phpunit/phpunit": "^9.0|^10.5|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mckenziearts\\BladeUntitledUIIcons\\BladeUntitledUIIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mckenziearts\\BladeUntitledUIIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arthur Monney",
+                    "homepage": "https://arthurmonney.me"
+                }
+            ],
+            "description": "A package to easily make use of UntitledUI icons in your Laravel Blade views.",
+            "homepage": "https://github.com/mckenziearts/blade-untitledui-icons",
+            "keywords": [
+                "Untitled UI",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mckenziearts/blade-untitledui-icons/issues",
+                "source": "https://github.com/mckenziearts/blade-untitledui-icons/tree/v1.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/monneyarthur",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/mckenziearts",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-03-03T09:57:46+00:00"
+        },
+        {
+            "name": "mckenziearts/filament-untitledui-icons",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mckenziearts/filament-untitledui-icons.git",
+                "reference": "6aa935917ad45ec7126c1f837a486a6799d30331"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mckenziearts/filament-untitledui-icons/zipball/6aa935917ad45ec7126c1f837a486a6799d30331",
+                "reference": "6aa935917ad45ec7126c1f837a486a6799d30331",
+                "shasum": ""
+            },
+            "require": {
+                "filafly/filament-icons": "^2.0",
+                "filament/filament": "^4.0 || ^5.0",
+                "mckenziearts/blade-untitledui-icons": "^1.5",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.22"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mckenziearts\\Icons\\Untitledui\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arthur Monney",
+                    "email": "monneylobe@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Untitledui icon pack for Filament Icons",
+            "keywords": [
+                "Untitledui",
+                "filament",
+                "icons",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mckenziearts/filament-untitledui-icons/issues",
+                "source": "https://github.com/mckenziearts/filament-untitledui-icons/tree/v1.2"
+            },
+            "time": "2026-03-03T10:55:16+00:00"
         },
         {
             "name": "monolog/monolog",

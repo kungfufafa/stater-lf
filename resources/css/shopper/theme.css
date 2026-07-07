@@ -1,0 +1,106 @@
+@import '../../../vendor/filament/filament/resources/css/theme.css';
+
+@import './base.css';
+@import './components/index.css';
+
+@source '../../../app/**/*.php';
+@source '../../../resources/views/**/*.blade.php';
+@source '../../../vendor/filament/**/*.blade.php';
+
+@source inline("max-w-{md,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl}");
+
+@layer components {
+    .fi-simple-layout .fi-simple-main:has(.sh-card),
+    .fi-simple-layout .fi-simple-main.fi-width-full,
+    .fi-simple-layout .fi-simple-main.fi-width-Full {
+        @apply my-0 bg-transparent p-0 shadow-none ring-0 dark:bg-transparent dark:ring-0 sm:rounded-none sm:p-0;
+    }
+
+    .sh-user-menu-trigger {
+        @apply relative inline-flex items-center rounded-full text-sm leading-5 outline-none ring-primary-500 transition focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-800;
+    }
+
+    .sh-user-menu-trigger .fi-avatar {
+        @apply size-8 rounded-full object-cover;
+    }
+
+    .sh-user-menu .fi-dropdown-panel {
+        @apply w-64 overflow-hidden rounded-xl bg-white p-0 shadow-lg ring-1 ring-gray-200 dark:bg-gray-900 dark:ring-white/10;
+    }
+
+    .sh-user-menu-account {
+        @apply flex items-center gap-3 border-b border-gray-200 p-3 dark:border-white/10;
+    }
+
+    .sh-user-menu-account .fi-avatar {
+        @apply size-8 rounded-full;
+    }
+
+    .sh-user-menu .fi-dropdown-list {
+        @apply p-1;
+    }
+
+    .sh-user-menu .fi-dropdown-list:not(:last-child) {
+        @apply border-b border-gray-200 dark:border-white/10;
+    }
+
+    .sh-user-menu .fi-dropdown-list.sh-user-menu-theme {
+        @apply bg-gray-50 p-1 dark:bg-gray-950;
+    }
+
+    .sh-user-menu .fi-dropdown-list-item {
+        @apply rounded-lg px-4 py-2 text-sm leading-5 text-gray-700 transition hover:bg-gray-50 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-white;
+    }
+
+    .sh-user-menu .fi-dropdown-list-item-icon {
+        @apply size-5 text-gray-400;
+    }
+
+    .sh-user-menu .fi-theme-switcher {
+        @apply w-full;
+    }
+
+    .sh-user-menu .fi-theme-switcher-btn {
+        @apply flex-1;
+    }
+
+    .sh-profile-page {
+        @apply grid gap-5 border-t border-gray-200 py-5 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-6 dark:border-white/10;
+    }
+
+    .sh-profile-heading {
+        @apply lg:col-span-1;
+    }
+
+    .sh-profile-form {
+        @apply lg:col-span-2 lg:max-w-2xl;
+    }
+
+    .sh-profile-form form {
+        @apply space-y-0;
+    }
+
+    .sh-profile-form .fi-sc {
+        @apply gap-y-5;
+    }
+
+    .sh-profile-form .fi-fo-field-wrp {
+        @apply gap-y-1.5;
+    }
+
+    .sh-profile-form .fi-fo-field-wrp-label {
+        @apply text-sm font-medium text-gray-700 dark:text-gray-300;
+    }
+
+    .sh-profile-form .fi-input-wrp {
+        @apply rounded-lg;
+    }
+
+    .sh-profile-form .fi-sc-actions {
+        @apply mt-8 border-t border-gray-200 pt-5 dark:border-white/10;
+    }
+
+    .sh-profile-form .fi-sc-actions .fi-ac {
+        @apply justify-end;
+    }
+}
