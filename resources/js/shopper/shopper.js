@@ -1,10 +1,4 @@
-import './slide-over'
-import CodePreview from './components/code-preview'
-import NestedSortable from './components/nested-sortable'
 import sidebarStore from './sidebar'
-
-window.codePreview = CodePreview
-window.nestedSortable = NestedSortable
 
 document.addEventListener('alpine:init', () => {
   const theme = localStorage.getItem('theme') ?? 'system'

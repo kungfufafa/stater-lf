@@ -13,6 +13,7 @@ use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
+use Filament\Support\Enums\Width;
 use Filament\View\PanelsRenderHook;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
@@ -39,6 +40,7 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop()
             ->login(Login::class)
             ->profile(EditProfile::class, isSimple: false)
+            ->maxContentWidth(Width::Full)
             ->favicon(asset('admin/images/favicons/favicon.ico'))
             ->brandLogo(fn (): HtmlString => new HtmlString(Blade::render('<x-shopper::brand class="size-8" />')))
             ->brandLogoHeight('2rem')
